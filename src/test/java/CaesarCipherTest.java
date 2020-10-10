@@ -31,6 +31,7 @@ public class CaesarCipherTest {
     }
 
     @Test
+
     public void encode_encodeASingleLetterWithRightShiftOutOfBounds_a(){
         CaesarCipher testCaesarCipher = new CaesarCipher("b",1);
         assertEquals("c", testCaesarCipher.getCipherText());
