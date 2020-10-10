@@ -11,6 +11,4 @@ public class CaesarCipherTest {
         CaesarCipher testCaesarCipher = new CaesarCipher("a", 1);
         assertEquals(true, testCaesarCipher instanceof CaesarCipher);
     }
-
-
 }
