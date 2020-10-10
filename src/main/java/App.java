@@ -37,7 +37,7 @@ public class App {
                     String userKey = bufferedReader.readLine();
                     Integer intKey = Integer.parseInt(userKey);
                     CaesarCipher userCipher = new CaesarCipher(userText,intKey);
-                    String cipherText = userCipher.encrypt();
+                    String cipherText = userCipher.encode();
                     System.out.println("-----------------------------------------------------");
                     System.out.println("What you entered ------>  "+ userText  );
                     System.out.println("Encrypted as     ------>  " + cipherText);
@@ -51,7 +51,7 @@ public class App {
                     String userKey = bufferedReader.readLine();
                     Integer intKey = Integer.parseInt(userKey);
                     CaesarCipher userCipher = new CaesarCipher(userText,intKey);
-                    String plainText = userCipher.decrypt();
+                    String plainText = userCipher.decode();
                     System.out.println("-----------------------------------------------------");
                     System.out.println("What you entered ------>  "+ userText  );
                     System.out.println("\" Decrypted as  ------>  " + plainText);
@@ -62,7 +62,7 @@ public class App {
                     runApp = false;
                 }
                 else{
-                    System.out.println("Sorry Ivalid details entered");
+                    System.out.println(" Sorry  ivalid details entered");
                     System.out.println("-----------------------------------------------------");
                     System.out.println("-----------------------------------------------------");
                 }
