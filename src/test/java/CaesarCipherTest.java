@@ -38,12 +38,12 @@ public class CaesarCipherTest {
     @Test
     public void encode_multiCharacterString_String(){
         CaesarCipher testCaesarCipher = new CaesarCipher("joseph",1);
-        assertEquals("Lfwjo", testCaesarCipher.getCipherText());
+        assertEquals("Wfwjo", testCaesarCipher.getCipherText());
     }
 
     @Test
     public void decode_reverseEncode_String(){
-        CaesarCipher testCaesarCipher = new CaesarCipher("Lfwjo", 1);
+        CaesarCipher testCaesarCipher = new CaesarCipher("Wfwjo", 1);
         assertEquals("joseph", testCaesarCipher.getPlainText());
     }
 
