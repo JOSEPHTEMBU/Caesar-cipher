@@ -37,12 +37,12 @@
 public class CaesarCipher {
 
     private String text;
-    private Integer key;
+    private int key;
     private String cipherText;
     private String plainText;
 
 
-    public CaesarCipher(String text, Integer key){
+    public CaesarCipher(String text, int key){
         this.key = key;
         this.text = text;
         this.cipherText = encode();
@@ -53,7 +53,7 @@ public class CaesarCipher {
         return text;
     }
 
-    public Integer getKey() {
+    public int getKey() {
         return key;
     }
 
@@ -64,39 +64,69 @@ public class CaesarCipher {
     public String encode() {
 
         String resultText = "";
-        if (key > 26) {
-            key = key % 26;
-        }
-        else if (key < 0) {
-            key = (key % 26) + 26;
-        }
 
-        for(int i = 0; i < text.length(); i++){
-            char letter = text.charAt(i);
-            if (Character.isLetter(letter)){
-                if (Character.isLowerCase(letter)) {
-                    char c = (char) (letter + key);
-                    if (c > 'z') {
-                        resultText += (char) (letter - (26 - key));
-                    }
-                    else {
-                        resultText += c;
-                    }
-                }
-                else if (Character.isUpperCase(letter)){
-                    char c = (char) + (letter + key);
-                    if (c >'Z'){
-                        resultText += (char)(letter -(26 - key));
-                    }
-                    else {
-                        resultText += c;
-                    }
-                }
-            }
-            else {
-                resultText += letter;
-            }
-        }
+       for(int i =0; i < text.length(); i++){
+           char letter = (char) (text.charAt(i));
+          if(Character.isLowerCase(letter)){
+              char c =(char) (letter + key);
+
+              if (c > 'z') {
+                  resultText += (char) (letter - (26 - key));
+              }
+              else {
+                  resultText += c;
+              }
+          }else if(Character.isUpperCase(letter)){
+              char c =(char) (letter + key);
+
+              if (c > 'Z') {
+                  resultText += (char) (letter - (26 - key));
+              }
+              else {
+                  resultText += c;
+              }
+          }
+       }
+
+
+
+
+
+
+
+
+
+
+
+
+
+//
+//        for(int i = 0; i < text.length(); i++){
+//            char letter = text.charAt(i);
+//            if (Character.isLetter(letter)){
+//                if (Character.isLowerCase(letter)) {
+//                    char c = (char) (letter + key);
+//                    if (c > 'z') {
+//                        resultText += (char) (letter - (26 - key));
+//                    }
+//                    else {
+//                        resultText += c;
+//                    }
+//                }
+//                else if (Character.isUpperCase(letter)){
+//                    char c = (char) + (letter + key);
+//                    if (c >'Z'){
+//                        resultText += (char)(letter -(26 - key));
+//                    }
+//                    else {
+//                        resultText += c;
+//                    }
+//                }
+//            }
+//            else {
+//                resultText += letter;
+//            }
+//        }
         return resultText;
     }
 
