@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="CaesarCipherTest" tests="1" skipped="0" failures="0" errors="0" timestamp="2020-10-10T22:45:09" hostname="moringa-ThinkPad-T450" time="0.029">
+<testsuite name="CaesarCipherTest" tests="1" skipped="0" failures="0" errors="0" timestamp="2020-10-11T06:49:23" hostname="moringa-ThinkPad-T450" time="0.046">
   <properties/>
-  <testcase name="encode_encodeASingleLetterWithRightShiftWithinBounds_b" classname="CaesarCipherTest" time="0.029"/>
+  <testcase name="encode_encodeASingleLetterWithRightShiftOutOfBounds_a" classname="CaesarCipherTest" time="0.046"/>
   <system-out><![CDATA[]]></system-out>
   <system-err><![CDATA[]]></system-err>
 </testsuite>
