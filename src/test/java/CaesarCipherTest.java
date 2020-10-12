@@ -52,19 +52,23 @@ public class CaesarCipherTest {
         CaesarCipher testCaesarCipher = new CaesarCipher("kptfqi", 1);
         assertEquals("joseph", testCaesarCipher.getPlainText());
     }
+//    @Test
+//    public void encode_doesNotEncodeSymbolsAndPeriods_Space(){
+//        CaesarCipher testCaesarCipher = new CaesarCipher(" ",-27);
+//        assertEquals(" ", testCaesarCipher.getCipherText());
+//    }
 
-
-     //    @Test
-      //    public void encrypts_single_number_correctly_with_positive_within_bounds_key(){
-     //        CaesarCipher testCaesarCipher = new CaesarCipher("*",27);
-     //        assertEquals("bC", testCaesarCipher.getCipherText());
-     //    }
-
-      //    @Test
-      //    public void encrypts_single_symbol_correctly_with_positive_within_bounds_key(){
-     //        CaesarCipher testCaesarCipher = new CaesarCipher("*",27);
-    //        assertEquals("bC", testCaesarCipher.getCipherText());
-     //    }
+//         @Test
+//          public void encrypts_single_number_correctly_with_positive_within_bounds_key(){
+//             CaesarCipher testCaesarCipher = new CaesarCipher("*",27);
+//             assertEquals("bC", testCaesarCipher.getCipherText());
+//         }
+//
+//          @Test
+//          public void encrypts_single_symbol_correctly_with_positive_within_bounds_key(){
+//             CaesarCipher testCaesarCipher = new CaesarCipher("*",27);
+//            assertEquals("bC", testCaesarCipher.getCipherText());
+//         }
 
 
 

@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="CaesarCipherTest" tests="6" skipped="0" failures="0" errors="0" timestamp="2020-10-11T18:24:21" hostname="moringa-ThinkPad-T450" time="0.044">
+<testsuite name="CaesarCipherTest" tests="6" skipped="0" failures="0" errors="0" timestamp="2020-10-12T13:13:48" hostname="moringa-ThinkPad-T450" time="0.061">
   <properties/>
-  <testcase name="encrypts_multi_character_word_character" classname="CaesarCipherTest" time="0.028"/>
+  <testcase name="encrypts_multi_character_word_character" classname="CaesarCipherTest" time="0.034"/>
   <testcase name="encrypts_a_single_lowercase_letter_word_with_positive_within_bounds_key" classname="CaesarCipherTest" time="0.001"/>
-  <testcase name="encrypts_a_single_letter_word_with_positive_out_of_bounds_key" classname="CaesarCipherTest" time="0.01"/>
-  <testcase name="decode_reverseEncode_String" classname="CaesarCipherTest" time="0.001"/>
-  <testcase name="encrypts_single_uppercase_letter_correctly" classname="CaesarCipherTest" time="0.002"/>
+  <testcase name="encrypts_a_single_letter_word_with_positive_out_of_bounds_key" classname="CaesarCipherTest" time="0.0"/>
+  <testcase name="decode_reverseEncode_String" classname="CaesarCipherTest" time="0.019"/>
+  <testcase name="encrypts_single_uppercase_letter_correctly" classname="CaesarCipherTest" time="0.003"/>
   <testcase name="test_instanceOfClassCaesarCipher_true" classname="CaesarCipherTest" time="0.0"/>
   <system-out><![CDATA[]]></system-out>
   <system-err><![CDATA[]]></system-err>
