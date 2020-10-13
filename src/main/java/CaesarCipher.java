@@ -1,39 +1,3 @@
-//public class CaesarCipher {
-//
-//    private String subjectText;
-//    private int key;
-//
-//    public CaesarCipher(String subjectText, int key) {
-//        this.subjectText = subjectText;
-//        this.key = key;
-//    }
-//
-//    public String getSubjectText() {
-//        return subjectText;
-//    }
-//
-//    public void setSubjectText(String subjectText) {
-//        this.subjectText = subjectText;
-//    }
-//
-//    public int getKey() {
-//        return key;
-//    }
-//
-//    public void setKey(Integer key) {
-//        this.key = key;
-//    }
-//
-//    public String encrypt(){
-//        return "I work";
-//    }
-//
-//    public String decrypt(){
-//        return "I work";
-//    }
-//
-//
-//}
 public class CaesarCipher {
 
     private String text;
@@ -88,46 +52,7 @@ public class CaesarCipher {
           }
        }
 
-
-
-
-
-
-
-
-
-
-
-
-
-//
-//        for(int i = 0; i < text.length(); i++){
-//            char letter = text.charAt(i);
-//            if (Character.isLetter(letter)){
-//                if (Character.isLowerCase(letter)) {
-//                    char c = (char) (letter + key);
-//                    if (c > 'z') {
-//                        resultText += (char) (letter - (26 - key));
-//                    }
-//                    else {
-//                        resultText += c;
-//                    }
-//                }
-//                else if (Character.isUpperCase(letter)){
-//                    char c = (char) + (letter + key);
-//                    if (c >'Z'){
-//                        resultText += (char)(letter -(26 - key));
-//                    }
-//                    else {
-//                        resultText += c;
-//                    }
-//                }
-//            }
-//            else {
-//                resultText += letter;
-//            }
-//        }
-        return resultText;
+       return resultText;
     }
 
     public String decode(){
